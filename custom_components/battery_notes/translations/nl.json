@@ -4,8 +4,8 @@
             "user": {
                 "description": "If you need help with the configuration have a look here: https://andrew-codechimp.github.io/HA-Battery-Notes/",
                 "data": {
-                    "device_id": "Device",
-                    "name": "Name"
+                    "device_id": "Apparaat",
+                    "name": "Naam"
                 },
                 "data_description": {
                     "name": "Leaving blank will take the name from the source device"
@@ -13,7 +13,7 @@
             },
             "battery": {
                 "data": {
-                    "battery_type": "Battery type",
+                    "battery_type": "Batterij Type",
                     "battery_quantity": "Battery quantity",
                     "battery_low_threshold": "Battery low threshold",
                     "battery_low_template": "Battery low template"
@@ -36,8 +36,8 @@
             "init": {
                 "description": "If you need help with the configuration have a look here: https://andrew-codechimp.github.io/HA-Battery-Notes/",
                 "data": {
-                    "name": "Name",
-                    "battery_type": "Battery type",
+                    "name": "Naam",
+                    "battery_type": "Batterij Type",
                     "battery_quantity": "Battery quantity",
                     "battery_low_threshold": "Battery low threshold",
                     "battery_low_template": "Battery low template"
@@ -56,7 +56,7 @@
     "entity": {
         "binary_sensor": {
             "battery_low": {
-                "name": "Battery low",
+                "name": "Lage batterij",
                 "state_attributes": {
                     "battery_low_threshold": {
                         "name": "Battery low threshold"
@@ -71,10 +71,10 @@
         },
         "sensor": {
             "battery_plus": {
-                "name": "Battery+",
+                "name": "Batterij+",
                 "state_attributes": {
                     "battery_type": {
-                        "name": "Battery type"
+                        "name": "Batterij Type"
                     },
                     "battery_quantity": {
                         "name": "Battery quantity"
@@ -86,7 +86,7 @@
                         "name": "Battery last replaced"
                     },
                     "battery_low": {
-                        "name": "Battery low"
+                        "name": "Lage batterij"
                     },
                     "battery_low_threshold": {
                         "name": "Battery low threshold"
@@ -100,10 +100,10 @@
                 }
             },
             "battery_type": {
-                "name": "Battery type",
+                "name": "Batterij Type",
                 "state_attributes": {
                     "battery_type": {
-                        "name": "Battery type"
+                        "name": "Batterij Type"
                     },
                     "battery_quantity": {
                         "name": "Battery quantity"
@@ -120,12 +120,12 @@
             "description": "Set the battery last replaced.",
             "fields": {
                 "device_id": {
-                    "description": "Device that has had its battery replaced.",
-                    "name": "Device"
+                    "description": "Apparaat waarvan de batterij is vervangen.",
+                    "name": "Apparaat"
                 },
                 "datetime_replaced": {
-                    "description": "Date replaced.",
-                    "name": "Date"
+                    "description": "Datum vervangen.",
+                    "name": "Datum"
                 }
             },
             "name": "Set battery replaced"
@@ -135,7 +135,7 @@
             "fields": {
                 "days_last_reported": {
                     "description": "Number of days since a device last reported its battery level.",
-                    "name": "Days"
+                    "name": "Dagen"
                 }
             },
             "name": "Check battery last reported"
